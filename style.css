@@ -17,12 +17,3 @@
   background-color: #008CBA;
   color: white;
 }
-.buttonback {
-  color: black; 
-  border: 1px solid #D3D3D3;
-}
-
-.buttonback:hover {
-  background-color: #D3D3D3;
-  color: white;
-}
