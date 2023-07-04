@@ -1,5 +1,4 @@
-.button1 {
-  background-color: white; 
+.button1 { 
   color: black; 
   border: 2px solid #4CAF50;
 }
@@ -10,7 +9,6 @@
 }
 
 .button2 {
-  background-color: white; 
   color: black; 
   border: 2px solid #008CBA;
 }
