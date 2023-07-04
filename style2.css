@@ -3,3 +3,12 @@ img{
   height: 20px;
   width: 20px;
 }
+.buttonback {
+  color: black; 
+  border: 1px solid #D3D3D3;
+}
+
+.buttonback:hover {
+  background-color: #D3D3D3;
+  color: white;
+}
