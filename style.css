@@ -1,6 +1,6 @@
 .button1 { 
   color: black; 
-  border: 2px solid #4CAF50;
+  border: 1px solid #4CAF50;
 }
 
 .button1:hover {
@@ -10,10 +10,19 @@
 
 .button2 {
   color: black; 
-  border: 2px solid #008CBA;
+  border: 1px solid #008CBA;
 }
 
 .button2:hover {
   background-color: #008CBA;
+  color: white;
+}
+.buttonback {
+  color: black; 
+  border: 1px solid #D3D3D3;
+}
+
+.buttonback:hover {
+  background-color: #D3D3D3;
   color: white;
 }
