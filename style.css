@@ -81,3 +81,26 @@ img{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+.menu-button{
+  border:none;
+  display:inline-block;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+  background-color:inherit;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+}
+
+.menu-button:hover{
+  color:#000;
+  background-color:#ccc
+}
+
+.menu-size{
+  font-size:24px;
+}
