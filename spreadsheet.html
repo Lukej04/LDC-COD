@@ -1,13 +1,24 @@
 <html>
 <head>
    <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
-  <button class="button button3" onclick="window.location.href='index.html';">Back</button>
-  
-<h1>All Data</h1>
+  <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="game-entry.html">Game Entry</a>
+      <a href="spreadsheet.html">Spreadsheet</a>
+      
+  </div>
 
-<a href="https://docs.google.com/spreadsheets/d/1b0Ak4QkFO5AKWDbOgidAlsVQHgl8YQDz2-YGGFJ4qf4/edit?pli=1#gid=731653090">Spreadsheet</a>
+<!-- Use any element to open the sidenav -->
+    <button class="menu-button menu-size" onclick="openNav()">&#9776</button>
 
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+       <h1>All Data</h1>
+       <a href="https://docs.google.com/spreadsheets/d/1b0Ak4QkFO5AKWDbOgidAlsVQHgl8YQDz2-YGGFJ4qf4/edit?pli=1#gid=731653090">Spreadsheet</a>
+    </div>
 </body>
 </html>
