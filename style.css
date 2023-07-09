@@ -56,8 +56,20 @@ img{
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.hover-black:hover{
   color: #f1f1f1;
+}
+
+.hover-green:hover{
+  color: #9DC73B;
+}
+
+.hover-red:hover{
+  color: #FF0000;
+}
+
+.hover-blue:hover{
+  color: #0000FF;
 }
 
 /* Position and style the close button (top right corner) */
