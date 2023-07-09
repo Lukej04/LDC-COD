@@ -3,52 +3,63 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <button class="button button3" onclick="window.location.href='index.html';">Back</button>
-<div>
-<p>Select Your Character</p>
-   <img src="temppic.jpg">
-   <img src="temppic.jpg">
-   <img src="temppic.jpg">
-   <img src="temppic.jpg">
-   <img src="temppic.jpg">
-   <img src="temppic.jpg">
-   <br>
-</div>
+   <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="game-entry.html">Game Entry</a>
+      <a href="spreadsheet.html">Spreadsheet</a>
+      
+    </div>
 
-<label>Season:</label>
-<select name="Season" id="Season">
-<option value="1">1</option>
-</select><br><br>
+<!-- Use any element to open the sidenav -->
+    <button class="menu-button menu-size" onclick="openNav()">&#9776</button>
 
-<label>Mode:</label>
-<select name="Mode" id="Mode">
-<option value="Select Mode"></option>
-<option value="Hardpoint">Hardpoint</option>
-<option value="Search">Search</option>
-<option value="Control">Control</option>
-</select><br><br>
-
-<label>Map:</label>
-<select name="Map" id="Map">
-<option value="Select Map"></option>
-<option value="Asilo">Asilo</option>
-<option value="Embassy">Embassy</option>
-<option value="Expo">Expo</option>
-<option value="Fortress">Fortress</option>
-<option value="Hotel">Hotel</option>
-<option value="Hydro">Hydro</option>
-<option value="Mercado">Mercado</option>
-</select><br><br>
-
-<label>Result:</label>
-<select name="Result" id="Result">
-<option value="Select Result"></option>
-<option value="Win">Win</option>
-<option value="Loss">Loss</option>
-</select><br><br>
-
-<br>
-<button>Submit</button><br>
-
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+       <div>
+         <p>Select Your Character</p>
+            <img src="temppic.jpg">
+            <img src="temppic.jpg">
+            <img src="temppic.jpg">
+            <img src="temppic.jpg">
+            <img src="temppic.jpg">
+            <img src="temppic.jpg">
+            <br>
+       </div>
+       
+       <label>Season:</label>
+       <select name="Season" id="Season">
+          <option value="1">1</option>
+       </select><br><br>
+       
+       <label>Mode:</label>
+       <select name="Mode" id="Mode">
+          <option value="Select Mode"></option>
+          <option value="Hardpoint">Hardpoint</option>
+          <option value="Search">Search</option>
+          <option value="Control">Control</option>
+       </select><br><br>
+       
+       <label>Map:</label>
+       <select name="Map" id="Map">
+          <option value="Select Map"></option>
+          <option value="Asilo">Asilo</option>
+          <option value="Embassy">Embassy</option>
+          <option value="Expo">Expo</option>
+          <option value="Fortress">Fortress</option>
+          <option value="Hotel">Hotel</option>
+          <option value="Hydro">Hydro</option>
+          <option value="Mercado">Mercado</option>
+       </select><br><br>
+       
+       <label>Result:</label>
+       <select name="Result" id="Result">
+          <option value="Select Result"></option>
+          <option value="Win">Win</option>
+          <option value="Loss">Loss</option>
+       </select><br><br>
+       <br>
+       <button>Submit</button><br>
+    </div>
 </body>
 </html>
