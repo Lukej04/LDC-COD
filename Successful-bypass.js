@@ -1,4 +1,4 @@
-window.addEventListener("click", function() {
+window.addEventListener("load", function() {
   const form = document.getElementById("my-form");
   form.addEventListener("submit", function(e) {
     e.preventDefault();
