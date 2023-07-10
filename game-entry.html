@@ -19,96 +19,62 @@
 
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div id="main">
-        <form method="POST" action="https://script.google.com/macros/s/AKfycbzdG_8ZhYuq4ALpHvbKk-EiBO3pNl-7Y6fEfG13VkOZvtVR-rPBIWLr3MD3K2jgD-7UYQ/exec">
-            <label>Select Your Character:</label>
-            <!--<img src="temppic.jpg">
-            <img src="temppic.jpg">
-            <img src="temppic.jpg">
-            <img src="temppic.jpg">
-            <img src="temppic.jpg">
-            <img src="temppic.jpg">
-            <br>-->
-            <select name="Player" id="Player">
-                <option value="Select Name"></option>
-                <option value="Luke">Luke</option>
-                <option value="Max">Max</option>
-                <option value="Matty">Matty</option>
-            </select>
-            <label>Season:</label>
-            <select name="Season" id="Season">
-                <option value="1">1</option>
-            </select><br><br>
+        <form method="POST" action="https://script.google.com/macros/s/AKfycbzdG_8ZhYuq4ALpHvbKk-EiBO3pNl-7Y6fEfG13VkOZvtVR-rPBIWLr3MD3K2jgD-7UYQ/exec" id="myform">
+            <form method="POST" action="https://script.google.com/macros/s/AKfycbzdG_8ZhYuq4ALpHvbKk-EiBO3pNl-7Y6fEfG13VkOZvtVR-rPBIWLr3MD3K2jgD-7UYQ/exec">
+                <label>Select Your Character:</label>
+                <!--<img src="temppic.jpg">
+                <img src="temppic.jpg">
+                <img src="temppic.jpg">
+                <img src="temppic.jpg">
+                <img src="temppic.jpg">
+                <img src="temppic.jpg">
+                <br>-->
+                <select name="Player" id="Player">
+                    <option value="Select Name"></option>
+                    <option value="Luke">Luke</option>
+                    <option value="Max">Max</option>
+                    <option value="Matty">Matty</option>
+                </select>
+                <label>Season:</label>
+                <select name="Season" id="Season">
+                    <option value="1">1</option>
+                </select><br><br>
 
-            <label>Mode:</label>
-            <select name="Mode" id="Mode">
-                <option value="Select Mode"></option>
-                <option value="Hardpoint">Hardpoint</option>
-                <option value="Search">Search</option>
-                <option value="Control">Control</option>
-            </select><br><br>
+                <label>Mode:</label>
+                <select name="Mode" id="Mode">
+                    <option value="Select Mode"></option>
+                    <option value="Hardpoint">Hardpoint</option>
+                    <option value="Search">Search</option>
+                    <option value="Control">Control</option>
+                </select><br><br>
 
-            <label>Map:</label>
-            <select name="Map" id="Map">
-                <option value="Select Map"></option>
-            </select><br><br>
+                <label>Map:</label>
+                <select name="Map" id="Map">
+                    <option value="Select Map"></option>
+                    <option value="Asilo">Asilo</option>
+                    <option value="Embassy">Embassy</option>
+                    <option value="Expo">Expo</option>
+                    <option value="Fortress">Fortress</option>
+                    <option value="Hotel">Hotel</option>
+                    <option value="Hydro">Hydro</option>
+                    <option value="Mercado">Mercado</option>
+                </select><br><br>
 
-            <label>Result:</label>
-            <select name="Result" id="Result">
-                <option value="Select Result"></option>
-                <option value="Win">Win</option>
-                <option value="Loss">Loss</option>
-            </select><br><br>
-
-            <label>Kills:</label>
-            <input name="Kills" type="number" placeholder="Kills" required><br><br>
-
-            <label>Deaths:</label>
-            <input name="Deaths" type="number" placeholder="Deaths" required><br><br>
-            <br>
-            <input type="submit" value="Submit">
-        </form>
-        <p>Test</p>
+                <label>Result:</label>
+                <select name="Result" id="Result">
+                    <option value="Select Result"></option>
+                    <option value="Win">Win</option>
+                    <option value="Loss">Loss</option>
+                </select><br><br>
+                <label>Kills:</label>
+                <input name="Kills" type="number" placeholder="Kills" required><br><br>
+                <label>Deaths:</label>
+                <input name="Deaths" type="number" placeholder="Deaths" required><br><br>
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <p>Test2</p>
+            <p>Test</p>
     </div>
-
-   // <script>
-   //     function updateMapOptions() {
-   //         var modeSelect = document.getElementById("Mode");
-   //         var mapSelect = document.getElementById("Map");
-   //         var selectedMode = modeSelect.options[modeSelect.selectedIndex].value;
-   //
-   //         // Remove all existing options except the placeholder
-   //         while (mapSelect.options.length > 1) {
-   //             mapSelect.options.remove(1);
-   //         }
-   //
-   //         // Add available map options based on the selected mode
-   //         if (selectedMode === "Control") {
-   //             enableOption(mapSelect, "Asilo", "Asilo");
-   //             enableOption(mapSelect, "Expo", "Expo");
-   //             enableOption(mapSelect, "Hotel", "Hotel");
-   //         }
-   //         else if (selectedMode === "Hardpoint") {
-   //             enableOption(mapSelect, "Fortress");
-   //             enableOption(mapSelect, "Hotel");
-   //             enableOption(mapSelect, "Mercado");
-   //             enableOption(mapSelect, "Hydro");
-   //             enableOption(mapSelect, "Embassy");
-   //         }
-   //         else if (selectedMode === "Search") {
-   //             enableOption(mapSelect, "Fortress");
-   //             enableOption(mapSelect, "Hotel");
-   //             enableOption(mapSelect, "Embassy");
-   //             enableOption(mapSelect, "Asilo");
-   //             enableOption(mapSelect, "Mercado");
-   //         }
-   //     }
-   //
-   //     function addOption(selectElement, value, text) {
-   //         var option = document.createElement("option");
-   //         option.value = value;
-   //         option.text = text;
-   //         selectElement.add(option);
-   //     }
-    </script>
 </body>
 </html>
