@@ -83,9 +83,9 @@
 
             // Add available map options based on the selected mode
             if (selectedMode === "Control") {
-                addOption(mapSelect, "Asilo", "Asilo");
-                addOption(mapSelect, "Expo", "Expo");
-                addOption(mapSelect, "Hotel", "Hotel");
+                enableOption(mapSelect, "Asilo", "Asilo");
+                enableOption(mapSelect, "Expo", "Expo");
+                enableOption(mapSelect, "Hotel", "Hotel");
             }
             else if (selectedMode === "Hardpoint") {
                 enableOption(mapSelect, "Fortress");
