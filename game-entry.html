@@ -76,27 +76,25 @@
             var mapSelect = document.getElementById("Map");
             var selectedMode = modeSelect.options[modeSelect.selectedIndex].value;
 
-           // // Disable all map options
-           // for (var i = 0; i < mapSelect.options.length; i++) {
-           //     mapSelect.options[i].disabled = true;
-           // }
-
-            // Enable specific map options based on the selected mode
-            if (selectedMode === "Control") {
-                enableOption(mapSelect, "Asilo");
-                enableOption(mapSelect, "Expo");
-                enableOption(mapSelect, "Hotel");
+            // Remove all existing options except the placeholder
+            while (mapSelect.options.length > 1) {
+                mapSelect.options.remove(1);
             }
 
-            if (selectedMode === "Hardpoint") {
+            // Add available map options based on the selected mode
+            if (selectedMode === Control) {
+                addOption(mapSelect, "Asilo", "Asilo");
+                addOption(mapSelect, "Expo", "Expo");
+                addOption(mapSelect, "Hotel", "Hotel");
+            }
+            else if (selectedMode === Hardpoint) {
                 enableOption(mapSelect, "Fortress");
                 enableOption(mapSelect, "Hotel");
                 enableOption(mapSelect, "Mercado");
                 enableOption(mapSelect, "Hydro");
                 enableOption(mapSelect, "Embassy");
             }
-
-            if (selectedMode === "Search") {
+            else if (selectedMode === Search) {
                 enableOption(mapSelect, "Fortress");
                 enableOption(mapSelect, "Hotel");
                 enableOption(mapSelect, "Embassy");
@@ -105,13 +103,11 @@
             }
         }
 
-        function enableOption(selectElement, value) {
-            for (var i = 0; i < selectElement.options.length; i++) {
-                if (selectElement.options[i].value === value) {
-                    selectElement.options[i].disabled = false;
-                    break;
-                }
-            }
+        function addOption(selectElement, value, text) {
+            var option = document.createElement("option");
+            option.value = value;
+            option.text = text;
+            selectElement.add(option);
         }
     </script>
 </body>
