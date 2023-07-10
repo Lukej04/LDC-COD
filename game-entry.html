@@ -82,19 +82,19 @@
             }
 
             // Add available map options based on the selected mode
-            if (selectedMode === Control) {
+            if (selectedMode === "Control") {
                 addOption(mapSelect, "Asilo", "Asilo");
                 addOption(mapSelect, "Expo", "Expo");
                 addOption(mapSelect, "Hotel", "Hotel");
             }
-            else if (selectedMode === Hardpoint) {
+            else if (selectedMode === "Hardpoint") {
                 enableOption(mapSelect, "Fortress");
                 enableOption(mapSelect, "Hotel");
                 enableOption(mapSelect, "Mercado");
                 enableOption(mapSelect, "Hydro");
                 enableOption(mapSelect, "Embassy");
             }
-            else if (selectedMode === Search) {
+            else if (selectedMode === "Search") {
                 enableOption(mapSelect, "Fortress");
                 enableOption(mapSelect, "Hotel");
                 enableOption(mapSelect, "Embassy");
