@@ -12,5 +12,4 @@ window.addEventListener("load", function() {
       alert("Success!");
     })
   });
-  
 });
