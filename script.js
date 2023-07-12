@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // Google Sheet API endpoint
-  const url = 'https://sheets.googleapis.com/v4/spreadsheets/LDC Spreadsheet/values/Sheet1!A9:H9:append?valueInputOption=RAW';
+  const url = 'https://sheets.googleapis.com/v4/spreadsheets/LDCSpreadsheet/values/Sheet1!A9:H9:append?valueInputOption=RAW';
 
   // Google Sheet API access token
   const accessToken = 'ya29.a0AbVbY6OXfEjCq45wOHbmiH6BTityUj9lz-N9lYCTdtG9J9sx6DbOBzC1Mk2SW0Jv_Mzi7_1jEOsvGmFGX6iE1WX9rjoZDNwGKOhUHNGGRBBpqlQZA4Obt3CJDSAN5C0Z9cl6Fefo1sURC5_qL4THtfNe3aK-aCgYKAYASARASFQFWKvPlJ33Q_yFobTMWmV_WNeURaA0163';
