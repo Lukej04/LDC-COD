@@ -18,10 +18,11 @@ $(document).ready(function() {
     const result = $('#result').val();
     const kills = $('#kills').val();
     const deaths = $('#deaths').val();
+    const sr = $('#sr').val();
 
     // Prepare the data to be sent to the Google Sheet
     const data = {
-      values: [[date, player, season, mode, map, result, kills, deaths]]
+      values: [[date, player, season, mode, map, result, kills, deaths, sr]]
     };
 
     // Send a POST request to the Google Sheet API
